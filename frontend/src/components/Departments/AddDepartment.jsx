@@ -10,7 +10,7 @@ function AddDepartment() {
     e.preventDefault();
     //console.log(depname,desc);
     try{
-      const res = await axios.post('https://employee-management-system-e8fx.vercel.app/api/department/add',{depname,desc})
+      const res = await axios.post('https://employee-management-system-5mci.vercel.app/.vercel.app/api/department/add',{depname,desc})
       if(res.data.success) {
         navigate('/admin_dash/departments')
         console.log(res);

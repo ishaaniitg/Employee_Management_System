@@ -13,7 +13,7 @@ function List() {
     
   const fetchleaves = async () =>{
     try{
-      const res = await axios.get(`https://employee-management-system-e8fx.vercel.app/api/leave/${id1}`)
+      const res = await axios.get(`https://employee-management-system-5mci.vercel.app/.vercel.app/api/leave/${id1}`)
       console.log(res.data);
 
       if(res.data.success){

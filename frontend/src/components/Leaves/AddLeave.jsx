@@ -21,7 +21,7 @@ function AddLeave() {
         e.preventDefault()
          try {
         
-        const res = await axios.post(`https://employee-management-system-e8fx.vercel.app/api/leave/add`,leave)
+        const res = await axios.post(`https://employee-management-system-5mci.vercel.app/.vercel.app/api/leave/add`,leave)
         console.log(res);
 
          if(res.data.success) {

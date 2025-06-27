@@ -9,7 +9,7 @@ function Table() {
   const [filtered,setfiltered] = useState([])
     const fetchleaves  = async ()=>{
         try {
-        const res = await axios.get('https://employee-management-system-e8fx.vercel.app/api/leave')
+        const res = await axios.get('https://employee-management-system-5mci.vercel.app/.vercel.app/api/leave')
         console.log(res);
 
          if(res.data.success) {         
