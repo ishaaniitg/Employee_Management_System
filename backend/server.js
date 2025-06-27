@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
@@ -8,12 +10,14 @@ import salaryRouter from './routes/salary.js'
 import LeaveRouter from './routes/Leave.js'
 import settingsRouter from './routes/settings.js'
 import dashboardRouter from './routes/dashboard.js'
-mongoose.connect('mongodb://127.0.0.1:27017/EMS');
+mongoose.connect(process.env.MONGODB_URL);
 const app = express()
-const port = 3000
+const port = process.env.PORT
 
 app.use(cors())
 app.use(express.json())
+
+
 
 app.use('/api/auth',authRouter)
 app.use('/api/department',depRouter)
