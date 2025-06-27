@@ -32,7 +32,7 @@ app.use('/api/settings',settingsRouter)
 app.use('/api/dashboard',dashboardRouter)
 
 app.get('/', (req, res) => {
-  res.send('Hii')
+  res.send('lodu')
 })
 
 app.listen(port, () => {
