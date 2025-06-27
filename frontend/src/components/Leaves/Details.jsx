@@ -14,7 +14,7 @@ function Details() {
       try {
         console.log(id);
         
-        const res = await axios.get(`http://localhost:3000/api/leave/details/${id}`)
+        const res = await axios.get(`hhttps://employee-management-system-e8fx.vercel.app/api/leave/details/${id}`)
         console.log(res);
 
          if(res.data.success) {
@@ -31,7 +31,7 @@ function Details() {
     try {
         console.log(id);
         
-        const res = await axios.put(`http://localhost:3000/api/leave/${id}`,{status})
+        const res = await axios.put(`https://employee-management-system-e8fx.vercel.app/api/leave/${id}`,{status})
         console.log(res);
 
          if(res.data.success) {

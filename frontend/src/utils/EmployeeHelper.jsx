@@ -60,7 +60,7 @@ export const customStyles = {
  export const fetchdep = async ()=>{
     let departments 
       try {
-        const res = await axios.get('http://localhost:3000/api/department')
+        const res = await axios.get('https://employee-management-system-e8fx.vercel.app/api/department')
         
 
          if(res.data.success) {
@@ -77,7 +77,7 @@ export const customStyles = {
     export const getemployees = async (id)=>{
     let employees
       try {
-        const res = await axios.get(`http://localhost:3000/api/employee/salary/${id}`)
+        const res = await axios.get(`https://employee-management-system-e8fx.vercel.app/api/employee/salary/${id}`)
         
 
          if(res.data.success) {

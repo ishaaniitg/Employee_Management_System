@@ -24,7 +24,7 @@ function Settings() {
         } else {
 
             try{
-                const res = await axios.put('http://localhost:3000/api/settings/change-pass',setting)
+                const res = await axios.put('https://employee-management-system-e8fx.vercel.app/api/settings/change-pass',setting)
                 
             
          if(res.data.success) {

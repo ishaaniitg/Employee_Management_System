@@ -10,7 +10,7 @@ function View() {
 
     const fetchempl = async ()=>{
       try {      
-        const res = await axios.get(`http://localhost:3000/api/employee/${id}`)
+        const res = await axios.get(`https://employee-management-system-e8fx.vercel.app/api/employee/${id}`)
         console.log(res);
 
          if(res.data.success) {
