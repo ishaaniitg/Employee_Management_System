@@ -16,7 +16,7 @@ const app = express()
 const port = process.env.PORT
 
 app.use(cors({
-  origin:"https://employee-management-system-omega-lilac.vercel.app",
+  origin:"https://employee-management-system-snowy-two.vercel.app",
   credentials:true
 }))
 app.use(express.json())
@@ -32,7 +32,7 @@ app.use('/api/settings',settingsRouter)
 app.use('/api/dashboard',dashboardRouter)
 
 app.get('/', (req, res) => {
-  res.send('lodu')
+  res.send('Hi , Backend ')
 })
 
 app.listen(port, () => {
