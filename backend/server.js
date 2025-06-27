@@ -10,7 +10,7 @@ import salaryRouter from './routes/salary.js'
 import LeaveRouter from './routes/Leave.js'
 import settingsRouter from './routes/settings.js'
 import dashboardRouter from './routes/dashboard.js'
-mongoose.connect(process.env.MONGODB_URL);
+mongoose.connect('mongodb+srv://Ishaan:Ishaan123@clusteremployeeapp.pbg0n7u.mongodb.net/?retryWrites=true&w=majority&appName=ClusterEmployeeApp');
 
 const app = express()
 const port = process.env.PORT
