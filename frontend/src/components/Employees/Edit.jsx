@@ -14,7 +14,7 @@ function Edit() {
   useEffect(()=>{
     const fetchempl = async ()=>{
       try {
-        const res = await axios.get(`https://employee-management-system-5mci.vercel.app/.vercel.app/api/employee/${id}`)
+        const res = await axios.get(`https://employeemanagementsystem-rust.vercel.app/api/employee/${id}`)
         console.log(res);
 
          if(res.data.success) {
@@ -47,7 +47,7 @@ function Edit() {
       const submitHandler = async (e)=>{
         e.preventDefault();
          try{
-      const res = await axios.put(`https://employee-management-system-5mci.vercel.app/.vercel.app/api/employee/${id}`,employee)
+      const res = await axios.put(`https://employeemanagementsystem-rust.vercel.app/api/employee/${id}`,employee)
       if(res.data.success) {
         navigate('/admin_dash/employees')
         console.log(res);

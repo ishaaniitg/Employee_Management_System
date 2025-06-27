@@ -16,7 +16,7 @@ const app = express()
 const port = process.env.PORT
 
 app.use(cors({
-  origin:"https://employee-management-system-macx.vercel.app",
+  origin:"https://employee-management-system-omega-lilac.vercel.app",
   credentials:true
 }))
 app.use(express.json())

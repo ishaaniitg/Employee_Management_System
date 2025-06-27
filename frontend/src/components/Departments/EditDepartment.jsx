@@ -12,7 +12,7 @@ function EditDepartment() {
 
     const fetchdep = async ()=>{
       try {
-        const res = await axios.get(`https://employee-management-system-5mci.vercel.app/.vercel.app/api/department/${id}`)
+        const res = await axios.get(`https://employeemanagementsystem-rust.vercel.app/api/department/${id}`)
         console.log(res);
 
          if(res.data.success) {
@@ -31,7 +31,7 @@ function EditDepartment() {
   const handleSubmit = async (e)=>{
     e.preventDefault()
     try{
-      const res = await axios.put(`https://employee-management-system-5mci.vercel.app/.vercel.app/api/department/${id}` ,{depname,desc})
+      const res = await axios.put(`https://employeemanagementsystem-rust.vercel.app/api/department/${id}` ,{depname,desc})
       if(res.data.success) {
         navigate('/admin_dash/departments')
         console.log(res);

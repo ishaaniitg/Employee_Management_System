@@ -10,7 +10,7 @@ function View() {
 
     const fetchempl = async ()=>{
       try {      
-        const res = await axios.get(`https://employee-management-system-5mci.vercel.app/.vercel.app/api/employee/${id}`)
+        const res = await axios.get(`https://employeemanagementsystem-rust.vercel.app/api/employee/${id}`)
         console.log(res);
 
          if(res.data.success) {

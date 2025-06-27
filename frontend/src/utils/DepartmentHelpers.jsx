@@ -43,7 +43,7 @@ export const DepButtons = ({_id , ondepDelete})=>{
 
     const handleDelete = async (id)=>{
             try {
-        const res = await axios.delete(`https://employee-management-system-5mci.vercel.app/.vercel.app/api/department/${id}`)
+        const res = await axios.delete(`https://employeemanagementsystem-rust.vercel.app/api/department/${id}`)
         console.log(res);
 
          if(res.data.success) {

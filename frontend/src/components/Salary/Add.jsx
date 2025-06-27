@@ -30,7 +30,7 @@ function Add() {
   useEffect(()=>{ // fetch all employees initially 
     const fetchempl = async ()=>{
       try {
-        const res = await axios.get(`https://employee-management-system-5mci.vercel.app/.vercel.app/api/employee`)
+        const res = await axios.get(`https://employeemanagementsystem-rust.vercel.app/api/employee`)
         console.log(res);
 
          if(res.data.success) {
@@ -64,7 +64,7 @@ function Add() {
      const submitHandler = async (e)=>{ // send all the form data 'emps' state to backend
         e.preventDefault();
          try{
-      const res = await axios.post(`https://employee-management-system-5mci.vercel.app/.vercel.app/api/salary/add`,salary)
+      const res = await axios.post(`https://employeemanagementsystem-rust.vercel.app/api/salary/add`,salary)
       if(res.data.success) {
         navigate('/admin_dash/employees')
         console.log(res);

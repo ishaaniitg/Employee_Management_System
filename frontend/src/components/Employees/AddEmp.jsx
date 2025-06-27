@@ -25,7 +25,7 @@ function AddEmp() {
       const submitHandler = async (e)=>{
         e.preventDefault();
          try{
-      const res = await axios.post('https://employee-management-system-5mci.vercel.app/.vercel.app/api/employee/add',formdata)
+      const res = await axios.post('https://employeemanagementsystem-rust.vercel.app/api/employee/add',formdata)
       if(res.data.success) {
         navigate('/admin_dash/employees')
         console.log(res);
