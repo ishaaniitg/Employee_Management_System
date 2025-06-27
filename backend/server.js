@@ -11,6 +11,7 @@ import LeaveRouter from './routes/Leave.js'
 import settingsRouter from './routes/settings.js'
 import dashboardRouter from './routes/dashboard.js'
 mongoose.connect(process.env.MONGODB_URL);
+
 const app = express()
 const port = process.env.PORT
 
