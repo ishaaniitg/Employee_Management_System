@@ -4,7 +4,8 @@ import bcrypt from 'bcrypt'
 const login  =async (req,res)=>{
     const {email,pass} = req.body
     const user = await User.findOne({email:email})
-
+    console.log(user);
+    
     if(!user){
         res.send('username does not exists')
     } else {

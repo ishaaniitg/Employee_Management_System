@@ -12,7 +12,7 @@ function EmpList() {
   useEffect(()=>{
     const fetchemployees = async ()=>{
       try {
-        const res = await axios.get('https://employeemanagementsystem-rust.vercel.app/api/employee')
+        const res = await axios.get('http://localhost:3000/api/employee')
         console.log(res);
 
          if(res.data.success) {         

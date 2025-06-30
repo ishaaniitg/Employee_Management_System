@@ -12,7 +12,7 @@ function MyProfile() {
     const fetchempl = async ()=>{
       try {
         
-        const res = await axios.get(`https://employeemanagementsystem-rust.vercel.app/api/employee/user/${id.id}`)
+        const res = await axios.get(`http://localhost:3000/api/employee/user/${id.id}`)
         console.log(res);
 
          if(res.data.success) {

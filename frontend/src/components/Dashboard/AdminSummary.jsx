@@ -8,7 +8,7 @@ function AdminSummary() {
   useEffect(()=>{
     const fetchsumm = async ()=>{
       try {
-        const summ = await axios.get('https://employeemanagementsystem-rust.vercel.app/api/dashboard/summary')
+        const summ = await axios.get('http://localhost:3000/api/dashboard/summary')
         setsummary(summ.data)
         console.log(summ.data);
         

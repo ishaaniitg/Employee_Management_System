@@ -14,7 +14,7 @@ function Details() {
       try {
         console.log(id);
         
-        const res = await axios.get(`hhttps://employeemanagementsystem-rust.vercel.app/api/leave/details/${id}`)
+        const res = await axios.get(`http://localhost:3000/api/leave/details/${id}`)
         console.log(res);
 
          if(res.data.success) {
@@ -30,8 +30,9 @@ function Details() {
   const changeStatus = async(id,status)=>{
     try {
         console.log(id);
+        console.log('sending id = ' , id , ' status is ', status);
         
-        const res = await axios.put(`https://employeemanagementsystem-rust.vercel.app/api/leave/${id}`,{status})
+        const res = await axios.put(`http://localhost:3000/api/leave/${id}`,{status})
         console.log(res);
 
          if(res.data.success) {

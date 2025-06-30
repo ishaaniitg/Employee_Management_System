@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault()
     
     try {
-      let r = await axios.post('https://employeemanagementsystem-rust.vercel.app/api/auth/login',{email,pass})
+      let r = await axios.post('http://localhost:3000/api/auth/login',{email,pass})
        
        if(r.data.success){
         console.log(r);
@@ -33,12 +33,12 @@ function Login() {
         setpass('')
       }
     } catch (err){
-      console.log('errr occured : ',err);
+      console.log('errr occured : ', err);
       
     }
   }
   return (
-    <div className='flex flex-col h-screen items-center justify-center space-y-6 bg-gradient-to-b from-yellow-600 from-50% to gray-100 to to-50%'>
+    <div className='flex flex-col h-screen items-center justify-center space-y-6 bg-gradient-to-b from-teal-600 from-50% to gray-100 to to-50%'>
       <h2 className='text-3xl text-white font-sans'>Employee Management System</h2>
       <div className='border shadow p-6 w1/4 bg-white'>
       <h2 className='text-2xl font-bold mb-4'>Login</h2>

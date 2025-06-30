@@ -10,15 +10,12 @@ import salaryRouter from './routes/salary.js'
 import LeaveRouter from './routes/Leave.js'
 import settingsRouter from './routes/settings.js'
 import dashboardRouter from './routes/dashboard.js'
-mongoose.connect('mongodb+srv://Ishaan:Ishaan123@clusteremployeeapp.pbg0n7u.mongodb.net/?retryWrites=true&w=majority&appName=ClusterEmployeeApp');
+mongoose.connect('mongodb://127.0.0.1:27017/EMS');
 
 const app = express()
-const port = process.env.PORT
+const port = 3000
 
-app.use(cors({
-  origin:"https://employee-management-system-snowy-two.vercel.app",
-  credentials:true
-}))
+app.use(cors())
 app.use(express.json())
 
 

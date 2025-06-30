@@ -14,7 +14,7 @@ function DepartmentList() {
   useEffect(()=>{
     const fetchdep = async ()=>{
       try {
-        const res = await axios.get('https://employeemanagementsystem-rust.vercel.app/api/department')
+        const res = await axios.get('http://localhost:3000/api/department')
         console.log(res);
 
          if(res.data.success) {

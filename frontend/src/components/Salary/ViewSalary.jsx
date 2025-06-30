@@ -7,7 +7,7 @@ function ViewSalary() {
 
   const fetchsalary = async () =>{
     try{
-      const res = await axios.get(`https://employeemanagementsystem-rust.vercel.app/api/salary/${id}`)
+      const res = await axios.get(`http://localhost:3000/api/salary/${id}`)
       console.log(res.data);
       if(res.data.success){
         setsalaries(res.data.salary)

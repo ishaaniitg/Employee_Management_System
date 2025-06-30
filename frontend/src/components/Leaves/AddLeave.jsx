@@ -21,7 +21,7 @@ function AddLeave() {
         e.preventDefault()
          try {
         
-        const res = await axios.post(`https://employeemanagementsystem-rust.vercel.app/api/leave/add`,leave)
+        const res = await axios.post(`http://localhost:3000/api/leave/add`,leave)
         console.log(res);
 
          if(res.data.success) {
