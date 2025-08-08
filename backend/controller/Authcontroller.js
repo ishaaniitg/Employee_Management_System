@@ -9,7 +9,10 @@ const login  =async (req,res)=>{
     if(!user){
         res.send('username does not exists')
     } else {
-    const userPass = await bcrypt.compare(pass,user.password) // compares stored long hashed password , with the entered root password
+        //console.log('pass is ' , pass);
+        
+    const userPass =  bcrypt.compare(pass,user.password) // compares stored long hashed password , with the entered root password
+
     if(!userPass){
         res.send('wrong Password')
     } else {

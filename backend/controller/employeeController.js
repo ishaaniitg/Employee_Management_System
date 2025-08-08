@@ -119,9 +119,13 @@ export const fetchEmployees = async (req,res)=>{
 export const findUser = async (req,res)=>{
      try{
         const {id} = req.params;
+        console.log(' id == ' , id);
+        
         const employee = await User.findById({_id:id})
-
-        const newEmp = await Employee.find({email:employee.email,password:employee.password})
+        console.log('employee === ' , employee);
+        
+        const newEmp = await Employee.find({email:employee.email})
+        console.log('newEmp = ', newEmp);
         
      return res.status(200).json({success:true,newEmp})
     } catch (error) {
