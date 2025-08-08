@@ -29,7 +29,7 @@ export const AddEmployee = async (req,res)=>{
     password:hashPass ,
     Salary })
 
-    if(existing.lentgh > 0 ) {
+    if(existing.length > 0 ) {
         res.status(500).json({success:false,error:`User already exists`})
     }
 
